@@ -28,14 +28,23 @@ Customization:
 
 Example:
 file_types = {
-'Images': ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.svg'],
-'Documents': ['.pdf', '.docx', '.txt', '.xlsx', '.pptx', '.csv', '.html'],
-'Music': ['.mp3', '.wav', '.aac'],
-'Videos': ['.mp4', '.mkv', '.flv', '.avi'],
-'Archives': ['.zip', '.rar', '.tar', '.gz'],
-'Disk Image': ['.iso'],
-'Application': ['.exe', '.msix', '.msi'],
-'3D Print': ['.stl', '.3mf', '.dxf', '.f3d', '.step'],
+
+'Images': ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.svg', '.tiff', '.ico', '.webp', '.psd'],
+
+'Documents': ['.pdf', '.docx', '.doc', '.txt', '.xlsx', '.xlsm', '.xlsb', '.pptx', '.csv', '.html', '.odt', '.rtf', '.md', '.ppt', '.xls', '.epub'],
+
+'Music': ['.mp3', '.wav', '.aac', '.flac', '.ogg', '.wma', '.m4a', '.aiff'],
+
+'Videos': ['.mp4', '.mkv', '.flv', '.avi', '.mov', '.wmv', '.webm', '.mpeg', '.mpg'],
+
+'Archives': ['.zip', '.rar', '.tar', '.gz', '.7z', '.bz2', '.xz'],
+
+'Disk Image': ['.iso', '.img', '.vmdk', '.bin', '.cue', '.dmg', '.vhd'],
+
+'Application': ['.exe', '.msix', '.msi', '.apk', '.bat', '.com', '.jar', '.cmd', '.gadget'],
+
+'3D Print': ['.stl', '.3mf', '.dxf', '.f3d', '.step', '.obj', '.iges'],
+
 'Torrent': ['.torrent']
 }
 
