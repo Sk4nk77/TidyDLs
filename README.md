@@ -39,6 +39,39 @@ file_types = {
 'Torrent': ['.torrent']
 }
 
+Setting Up a Scheduled Task to Run TidyDLs Automatically:
+1. Create a Batch File:
+   - Open a text editor and paste the following line:
+     ```
+     python "C:\path\to\your\TidyDLs.py"
+     ```
+   - Save this file with a `.bat` extension, e.g., `run_tidyDLs.bat`.
+
+2. Open Task Scheduler:
+   - Press `Windows + S` and type `Task Scheduler`, then press `Enter`.
+
+3. Create a New Task:
+   - In Task Scheduler, click on `Create Basic Task...` in the right-hand panel.
+   - Name the task (e.g., "Run TidyDLs") and provide a description.
+   - Click `Next`.
+
+4. Set the Trigger:
+   - Choose when you want the task to start. For continuous monitoring, select `When the computer starts` or `When I log on`.
+   - Click `Next`.
+
+5. Set the Action:
+   - Select `Start a program` and click `Next`.
+   - Click `Browse` and navigate to the batch file you created earlier (`run_tidyDLs.bat`).
+   - Click `Next`.
+
+6. Finish the Task Setup:
+   - Review the settings and click `Finish`.
+
+7. Configure Task Properties (Optional but Recommended):
+   - Find your task in the Task Scheduler Library, right-click it, and select `Properties`.
+   - In the `General` tab, select `Run whether user is logged on or not` and `Run with highest privileges`.
+   - In the `Settings` tab, make sure `Allow task to be run on demand` is checked.
+   - Click `OK`.
 
 Support:
 - For issues or questions, please contact [info@sk4nk77.com].
