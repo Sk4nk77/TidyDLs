@@ -6,17 +6,16 @@ from watchdog.events import FileSystemEventHandler
 
 # Define the mapping of file types to folders
 file_types = {
-'Images': ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.svg', '.tiff', '.ico', '.webp', '.psd'],
-'Documents': ['.pdf', '.docx', '.doc', '.txt', '.xlsx', '.xlsm', '.xlsb', '.pptx', '.csv', '.html', '.odt', '.rtf', '.md', '.ppt', '.xls', '.epub'],
+'Images': ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.svg', '.tiff', '.ico', '.webp', '.psd', '.ani', '.cur'],
+'Documents': ['.pdf', '.docx', '.doc', '.txt', '.xlsx', '.xlsm', '.xlsb', '.pptx', '.csv', '.html', '.odt', '.rtf', '.md', '.ppt', '.xls', '.epub', '.ics', '.dat', '.py', '.inf'],
 'Music': ['.mp3', '.wav', '.aac', '.flac', '.ogg', '.wma', '.m4a', '.aiff'],
 'Videos': ['.mp4', '.mkv', '.flv', '.avi', '.mov', '.wmv', '.webm', '.mpeg', '.mpg'],
 'Archives': ['.zip', '.rar', '.tar', '.gz', '.7z', '.bz2', '.xz'],
-'Disk Image': ['.iso', '.img', '.vmdk', '.bin', '.cue', '.dmg', '.vhd'],
-'Application': ['.exe', '.msix', '.msi', '.apk', '.bat', '.com', '.jar', '.cmd', '.gadget'],
+'Disk Image': ['.iso', '.img', '.vmdk', '.bin', '.cue', '.dmg', '.vhd', '.mds'],
+'Application': ['.exe', '.msix', '.msi', '.apk', '.bat', '.com', '.jar', '.cmd', '.gadget', '.appinstaller', '.application', '.scexe'],
 '3D Print': ['.stl', '.3mf', '.dxf', '.f3d', '.step', '.obj', '.iges'],
 'Torrent': ['.torrent']
 }
-
 # Define the Downloads folder path dynamically
 downloads_folder = os.path.join(os.path.expanduser('~'), 'Downloads')
 
